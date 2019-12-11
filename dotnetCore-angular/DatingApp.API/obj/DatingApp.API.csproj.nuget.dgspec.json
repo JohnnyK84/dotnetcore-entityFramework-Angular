@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {}
+    "c:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {
+    "c:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
+        "projectUniqueName": "c:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
         "projectName": "DatingApp.API",
-        "projectPath": "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
+        "projectPath": "c:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
         "packagesPath": "C:\\Users\\KingiJ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\obj\\",
+        "outputPath": "c:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,7 +43,15 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[3.1.0, )"
             },
