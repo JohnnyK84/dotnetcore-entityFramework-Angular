@@ -4,7 +4,7 @@ import {
   HAMMER_GESTURE_CONFIG
 } from "@angular/platform-browser";
 import { HttpClientModule } from "@angular/common/http";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { JwtModule } from "@auth0/angular-jwt";
@@ -63,6 +63,7 @@ export class CustomHammerConfig extends HammerGestureConfig {
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     BsDropdownModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     NgxGalleryModule,
