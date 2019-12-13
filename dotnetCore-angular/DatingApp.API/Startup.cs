@@ -42,8 +42,8 @@ namespace DatingApp.API
                     Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
 
-            // inject AddCors as service to be available as middleware
-            services.AddCors();
+            services.AddCors(); // inject AddCors as service to be available as middleware
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings")); // Get Cloudinary settings from app.json
             services.AddAutoMapper(typeof(DatingRepository).Assembly);
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IDatingRepository, DatingRepository>();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {}
+    "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {
+    "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
+        "projectUniqueName": "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
         "projectName": "DatingApp.API",
-        "projectPath": "c:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
+        "projectPath": "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
         "packagesPath": "C:\\Users\\KingiJ\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\obj\\",
+        "outputPath": "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -46,6 +46,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.9.1, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
