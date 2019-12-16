@@ -3,7 +3,7 @@ using AutoMapper;
 using DatingApp.API.Dtos;
 using DatingApp.API.Models;
 
-namespace DatingApp.API.Helpers
+namespace DatingApp.API.Helpers 
 {
     public class AutoMapperProfiles : Profile
     {
@@ -24,6 +24,7 @@ namespace DatingApp.API.Helpers
             CreateMap<UserForUpdateDto, User>();
             CreateMap<Photo, PhotoForReturnDto>();
             CreateMap<PhotoForCreationDto, Photo>();
+            CreateMap<UserForRegisterDto, User>();
         }
     }
 }

@@ -10,6 +10,8 @@ import { RouterModule } from "@angular/router";
 import { JwtModule } from "@auth0/angular-jwt";
 import { NgxGalleryModule } from "ngx-gallery";
 import { FileUploadModule } from "ng2-file-upload";
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { appRoutes } from "./routes";
 import { ErrorInterceptorProvider } from "./_services/error.interceptor";
@@ -75,7 +77,9 @@ export class CustomHammerConfig extends HammerGestureConfig {
         blacklistedRoutes: ["localhost:5000/api/auth"]
       }
     }),
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    BsDatepickerModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [
     AuthService,
