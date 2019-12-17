@@ -61,6 +61,7 @@ export class PhotoEditorComponent implements OnInit {
           isMain: res.isMain
         };
         this.photos.push(photo);
+        // automatically set main photos after uploading first photo
         if (photo.isMain) {
           this.authservice.changeMemberPhoto(photo.url);
           this.authservice.currentUser.photoUrl = photo.url;

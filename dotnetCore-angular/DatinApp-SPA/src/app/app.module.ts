@@ -10,8 +10,9 @@ import { RouterModule } from "@angular/router";
 import { JwtModule } from "@auth0/angular-jwt";
 import { NgxGalleryModule } from "ngx-gallery";
 import { FileUploadModule } from "ng2-file-upload";
-import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { TimeAgoPipe } from "time-ago-pipe";
 
 import { appRoutes } from "./routes";
 import { ErrorInterceptorProvider } from "./_services/error.interceptor";
@@ -59,7 +60,8 @@ export class CustomHammerConfig extends HammerGestureConfig {
     MemberCardComponent,
     MemberDetailComponent,
     MemberEditComponent,
-    PhotoEditorComponent
+    PhotoEditorComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
