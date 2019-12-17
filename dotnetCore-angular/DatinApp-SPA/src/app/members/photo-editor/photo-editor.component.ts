@@ -38,7 +38,7 @@ export class PhotoEditorComponent implements OnInit {
       url:
         this.baseUrl +
         "users/" +
-        this.authservice.decodedToken.nameid[0] +
+        this.authservice.decodedToken.nameid +
         "/photos",
       authToken: "Bearer " + localStorage.getItem("token"),
       isHTML5: true,
@@ -61,13 +61,21 @@ export class PhotoEditorComponent implements OnInit {
           isMain: res.isMain
         };
         this.photos.push(photo);
+        if (photo.isMain) {
+          this.authservice.changeMemberPhoto(photo.url);
+          this.authservice.currentUser.photoUrl = photo.url;
+          localStorage.setItem(
+            "user",
+            JSON.stringify(this.authservice.currentUser)
+          );
+        }
       }
     };
   }
 
   setMainPhoto(photo: Photo) {
     this.userService
-      .setMainPhoto(this.authservice.decodedToken.nameid[0], photo.id)
+      .setMainPhoto(this.authservice.decodedToken.nameid, photo.id)
       .subscribe(
         () => {
           this.currentMain = this.photos.filter(p => p.isMain === true)[0];
