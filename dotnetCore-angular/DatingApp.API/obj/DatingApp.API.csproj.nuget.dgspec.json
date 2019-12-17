@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {}
+    "C:\\Users\\jknz8\\OneDrive\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {
+    "C:\\Users\\jknz8\\OneDrive\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
+        "projectUniqueName": "C:\\Users\\jknz8\\OneDrive\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
         "projectName": "DatingApp.API",
-        "projectPath": "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
-        "packagesPath": "C:\\Users\\KingiJ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KingiJ\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\obj\\",
+        "projectPath": "C:\\Users\\jknz8\\OneDrive\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\DatingApp.API.csproj",
+        "packagesPath": "C:\\Users\\jknz8\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jknz8\\OneDrive\\Desktop\\dotnetcore-entityFramework-Angular\\dotnetcore-entityFramework-Angular\\dotnetCore-angular\\DatingApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\KingiJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jknz8\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
