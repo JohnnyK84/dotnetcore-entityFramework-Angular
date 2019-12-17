@@ -31,13 +31,9 @@ export class MemberEditComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // setting wrong id here
-    /*this.route.data.subscribe(data => {
+    this.route.data.subscribe(data => {
       this.user = data["user"];
-    });*/
-
-    // use this work around for now to set logged in user data
-    this.user = JSON.parse(localStorage.getItem("user"));
+    });
     this.authSservice.currentPhotoUrl.subscribe(
       photoUrl => (this.photoUrl = photoUrl)
     );
