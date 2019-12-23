@@ -14,6 +14,7 @@ import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { TimeAgoPipe } from "time-ago-pipe";
 import { PaginationModule } from "ngx-bootstrap/pagination";
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 
 import { appRoutes } from "./routes";
 import { ErrorInterceptorProvider } from "./_services/error.interceptor";
@@ -83,7 +84,8 @@ export class CustomHammerConfig extends HammerGestureConfig {
     TabsModule.forRoot(),
     BsDatepickerModule.forRoot(),
     BrowserAnimationsModule,
-    PaginationModule.forRoot()
+    PaginationModule.forRoot(),
+    ButtonsModule.forRoot()
   ],
   providers: [
     AuthService,
