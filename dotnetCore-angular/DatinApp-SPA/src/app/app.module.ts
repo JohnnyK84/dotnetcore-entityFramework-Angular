@@ -14,7 +14,7 @@ import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { TimeAgoPipe } from "time-ago-pipe";
 import { PaginationModule } from "ngx-bootstrap/pagination";
-import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { ButtonsModule } from "ngx-bootstrap/buttons";
 
 import { appRoutes } from "./routes";
 import { ErrorInterceptorProvider } from "./_services/error.interceptor";
@@ -36,6 +36,7 @@ import { MemberEditComponent } from "./members/member-edit/member-edit.component
 import { MemberEditResolver } from "./_resolvers/member-edit.resolver";
 import { PreventUnsavedChanges } from "./_guards/prevent-unsaved-changes.guard";
 import { PhotoEditorComponent } from "./members/photo-editor/photo-editor.component";
+import { ListsResolver } from "./_resolvers/lists.resolver";
 
 // function for JWTModule to attach JWT Tokens to HttpRequests
 export function tokenGetter() {
@@ -93,6 +94,7 @@ export class CustomHammerConfig extends HammerGestureConfig {
     MemberDetailResolver,
     MemberListResolver,
     MemberEditResolver,
+    ListsResolver,
     PreventUnsavedChanges,
     { provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig } // To fix issue with NGX Gallery error
   ],
