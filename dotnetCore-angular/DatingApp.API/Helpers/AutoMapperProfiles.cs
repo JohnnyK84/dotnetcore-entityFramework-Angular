@@ -3,7 +3,7 @@ using AutoMapper;
 using DatingApp.API.Dtos;
 using DatingApp.API.Models;
 
-namespace DatingApp.API.Helpers 
+namespace DatingApp.API.Helpers
 {
     public class AutoMapperProfiles : Profile
     {
@@ -25,6 +25,12 @@ namespace DatingApp.API.Helpers
             CreateMap<Photo, PhotoForReturnDto>();
             CreateMap<PhotoForCreationDto, Photo>();
             CreateMap<UserForRegisterDto, User>();
+            //using reverse map to allow the mapping to be reversed to provide a suitable message back to user after sending message
+            CreateMap<MessageForCreationDto, Message>().ReverseMap();
+            // configure mapping to extract photo url
+            CreateMap<Message, MessageToReturnDto>()
+                .ForMember(m => m.SenderPhotoUrl, opt => opt.MapFrom(u => u.Sender.Photos.FirstOrDefault(p => p.IsMain).Url))
+                .ForMember(m => m.RecipientPhotoUrl, opt => opt.MapFrom(u => u.Recipient.Photos.FirstOrDefault(p => p.IsMain).Url));
         }
     }
 }
