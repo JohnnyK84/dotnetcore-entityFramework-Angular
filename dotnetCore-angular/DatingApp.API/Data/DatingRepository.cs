@@ -26,12 +26,6 @@ namespace DatingApp.API.Data
             _context.Remove(entity);
         }
 
-        public async Task<Like> GetLike(int userId, int recipientId)
-        {
-            // using FirstOrDefaultAsync to return null if liker has laready liked likee
-            return await _context.Likes.FirstOrDefaultAsync(u => u.LikerId == userId && u.LikeeId == recipientId);
-        }
-
         public async Task<Photo> GetMainPhotoForUser(int userId)
         {
             return await _context.Photos.Where(u => u.UserId == userId).FirstOrDefaultAsync(p => p.IsMain);
@@ -60,6 +54,7 @@ namespace DatingApp.API.Data
             users = users.Where(u => u.Id != userParams.UserId);
             users = users.Where(u => u.Gender == userParams.Gender);
 
+            // Filter for likers / likees (List of users you like or who have liked you)
             if (userParams.Likers)
             {
                 var userLikers = await GetUserLikes(userParams.UserId, userParams.Likers);
@@ -94,6 +89,12 @@ namespace DatingApp.API.Data
             }
 
             return await PagedList<User>.CreateAsync(users, userParams.PageNumber, userParams.PageSize);
+        }
+
+        public async Task<Like> GetLike(int userId, int recipientId)
+        {
+            // using FirstOrDefaultAsync to return null if liker has laready liked likee
+            return await _context.Likes.FirstOrDefaultAsync(u => u.LikerId == userId && u.LikeeId == recipientId);
         }
 
         // method to return list of likers or likees
